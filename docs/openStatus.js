@@ -1,8 +1,8 @@
 import schedule from "./assets/JSON/schedule.json" with { type: 'json' }
 import alert from "./assets/JSON/alert.json" with { type: 'json' }
 
-const openStatus = document.querySelector(".open-status h2")
-const pulse = document.querySelector(".open-status-icon")
+const openStatus = document.querySelector("#open-status h2")
+const pulse = document.querySelector("#open-status .icon")
 
 // Runs `checkOpenStatus()` during load, then each 30 seconds
 checkOpenStatus()
