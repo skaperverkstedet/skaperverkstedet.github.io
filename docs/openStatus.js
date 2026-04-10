@@ -103,7 +103,7 @@ function earlyTime(day, hour, minute) {
     
     if (hour <= earlyHour) {
         let earlyMinute = earlyTime.match(/[^:]*$/)[0]
-        if (minute < earlyMinute) {
+        if (hour < earlyHour || minute < earlyMinute) {
             return true
         }
     }
